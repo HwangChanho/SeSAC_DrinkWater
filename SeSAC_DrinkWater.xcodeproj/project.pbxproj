@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		581F8FB42711239A0032712E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581F8FB32711239A0032712E /* AppDelegate.swift */; };
 		581F8FB62711239A0032712E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581F8FB52711239A0032712E /* SceneDelegate.swift */; };
-		581F8FB82711239A0032712E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581F8FB72711239A0032712E /* ViewController.swift */; };
+		581F8FB82711239A0032712E /* DrinkWaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581F8FB72711239A0032712E /* DrinkWaterViewController.swift */; };
 		581F8FBB2711239A0032712E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581F8FB92711239A0032712E /* Main.storyboard */; };
 		581F8FBD2711239B0032712E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581F8FBC2711239B0032712E /* Assets.xcassets */; };
 		581F8FC02711239B0032712E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581F8FBE2711239B0032712E /* LaunchScreen.storyboard */; };
+		581F8FCC27113C630032712E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581F8FCB27113C630032712E /* ProfileViewController.swift */; };
+		58B0F3B92712A61E008D558F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B0F3B82712A61E008D558F /* UserManager.swift */; };
+		58B0F3BB2712BB06008D558F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B0F3BA2712BB06008D558F /* UserModel.swift */; };
+		58B0F3C32712E17B008D558F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B0F3C22712E17B008D558F /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		581F8FB02711239A0032712E /* SeSAC_DrinkWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC_DrinkWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		581F8FB32711239A0032712E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		581F8FB52711239A0032712E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		581F8FB72711239A0032712E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		581F8FB72711239A0032712E /* DrinkWaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterViewController.swift; sourceTree = "<group>"; };
 		581F8FBA2711239A0032712E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		581F8FBC2711239B0032712E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		581F8FBF2711239B0032712E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		581F8FC12711239B0032712E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		581F8FCB27113C630032712E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		58B0F3B82712A61E008D558F /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		58B0F3BA2712BB06008D558F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		58B0F3C22712E17B008D558F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,33 @@
 			children = (
 				581F8FB32711239A0032712E /* AppDelegate.swift */,
 				581F8FB52711239A0032712E /* SceneDelegate.swift */,
-				581F8FB72711239A0032712E /* ViewController.swift */,
+				581F8FCA271139E10032712E /* Model */,
+				581F8FC7271123D10032712E /* Controller */,
 				581F8FB92711239A0032712E /* Main.storyboard */,
 				581F8FBC2711239B0032712E /* Assets.xcassets */,
 				581F8FBE2711239B0032712E /* LaunchScreen.storyboard */,
 				581F8FC12711239B0032712E /* Info.plist */,
 			);
 			path = SeSAC_DrinkWater;
+			sourceTree = "<group>";
+		};
+		581F8FC7271123D10032712E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				581F8FB72711239A0032712E /* DrinkWaterViewController.swift */,
+				581F8FCB27113C630032712E /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		581F8FCA271139E10032712E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58B0F3C22712E17B008D558F /* Constant.swift */,
+				58B0F3BA2712BB06008D558F /* UserModel.swift */,
+				58B0F3B82712A61E008D558F /* UserManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				581F8FB82711239A0032712E /* ViewController.swift in Sources */,
+				58B0F3BB2712BB06008D558F /* UserModel.swift in Sources */,
+				58B0F3B92712A61E008D558F /* UserManager.swift in Sources */,
+				581F8FB82711239A0032712E /* DrinkWaterViewController.swift in Sources */,
+				581F8FCC27113C630032712E /* ProfileViewController.swift in Sources */,
 				581F8FB42711239A0032712E /* AppDelegate.swift in Sources */,
+				58B0F3C32712E17B008D558F /* Constant.swift in Sources */,
 				581F8FB62711239A0032712E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
